@@ -1,7 +1,7 @@
 package com.ryunen344.mpp.lib
 
-class FromC {
-    init {
-        getNtrStr()
+class IosMain {
+    fun fuga() {
+        // nop
     }
 }
