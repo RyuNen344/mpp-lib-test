@@ -42,6 +42,14 @@ android {
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"
+
+        externalNativeBuild {
+            cmake {
+                arguments.plusAssign("-DCMAKE_BUILD_TYPE=DEBUG")
+                cppFlags.plusAssign("-DBUILD_DEBUG")
+                getcFlags() += "-DBUILD_DEBUG"
+            }
+        }
     }
     buildTypes {
         getByName("release") {
@@ -51,10 +59,21 @@ android {
     sourceSets.forEach {
         it.manifest.srcFile("src/androidMain/AndroidManifest.xml")
     }
+    sourceSets {
+        getByName("main").java.srcDirs("src/androidMain/kotlin")
+        getByName("test").java.srcDirs("src/androidTest/kotlin")
+        getByName("androidTest").java.srcDirs("src/androidTest/kotlin")
+    }
     packagingOptions {
         exclude("META-INF/*")
     }
     lintOptions {
         isAbortOnError = false
+    }
+    externalNativeBuild {
+        cmake {
+            setPath("src/androidMain/cpp/CMakeLists.txt")
+            version = "3.10.2"
+        }
     }
 }
