@@ -15,9 +15,15 @@ repositories {
 }
 kotlin {
     android {
-        publishAllLibraryVariants()
+        publishLibraryVariants("release")
     }
     ios() {
+        compilations["main"].cinterops.create("key") {
+            defFile(project.file("src/nativeInterop/cinterop/ntstr.def"))
+            includeDirs(project.file("src/include"))
+            packageName("com.ryunen344.mpp.lib")
+            compilerOpts("-Isrc/include")
+        }
         binaries {
             framework()
         }
