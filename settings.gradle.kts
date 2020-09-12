@@ -14,4 +14,4 @@ pluginManagement {
     }
 }
 rootProject.name = "mpp-lib"
-
+enableFeaturePreview("GRADLE_METADATA")

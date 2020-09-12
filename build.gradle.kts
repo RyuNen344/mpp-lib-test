@@ -51,10 +51,10 @@ android {
     sourceSets.forEach {
         it.manifest.srcFile("src/androidMain/AndroidManifest.xml")
     }
+    packagingOptions {
+        exclude("META-INF/*")
+    }
     lintOptions {
         isAbortOnError = false
     }
-}
-dependencies {
-    implementation(kotlin("stdlib-jdk8"))
 }
