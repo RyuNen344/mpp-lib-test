@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.ryunen344.mpp.lib"
-version = "1.2.1-SNAPSHOT"
+version = "1.2.2-SNAPSHOT"
 
 repositories {
     gradlePluginPortal()
