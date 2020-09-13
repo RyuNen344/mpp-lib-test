@@ -1,6 +1,8 @@
 package com.ryunen344.mpp.lib
 
-class Adfads {
+import com.ryunen344.mpp.lib.nt.getNtrStr
+
+class AdfadsDev {
     init {
         IosMain().fuga()
         getNtrStr()
