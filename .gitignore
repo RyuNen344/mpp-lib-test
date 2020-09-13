@@ -15,8 +15,8 @@ local.properties
 /.idea/gradle.xml
 /.idea/jarRepositories.xml
 .DS_Store
-/build
-!/build/cocoapods/*
+/build/*
+!/build/cocoapods
 /captures
 .externalNativeBuild
 .cxx

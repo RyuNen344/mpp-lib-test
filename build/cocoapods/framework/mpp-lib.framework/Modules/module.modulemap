@@ -1,0 +1,6 @@
+framework module mpp-lib {
+  umbrella header "dummy.h"
+
+  export *
+  module * { export * }
+}
