@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name                     = 'mpp_lib'
     spec.version                  = '1.2.5-SNAPSHOT'
     spec.homepage                 = 'https://github.com/RyuNen344/mpp-lib-test'
-    spec.source                   = { :git => "git@github.com:RyuNen344/mpp-lib-test.git", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
+    spec.source                   = { :git => "git@github.com:RyuNen344/mpp-lib-test.git", :tag => "master" }
     spec.authors                  = 'RyuNen344'
     spec.license                  = ''
     spec.summary                  = 'CocoaPods Test of Kotlin/Native module'
