@@ -16,7 +16,7 @@ repositories {
 }
 kotlin {
     android {
-        publishLibraryVariants("release")
+        publishAllLibraryVariants()
     }
     ios() {
         compilations["main"].cinterops.create("key") {
