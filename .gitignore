@@ -16,6 +16,7 @@ local.properties
 /.idea/jarRepositories.xml
 .DS_Store
 /build
+!/build/cocoapods/*
 /captures
 .externalNativeBuild
 .cxx
